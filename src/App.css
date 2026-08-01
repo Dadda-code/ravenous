@@ -1,21 +1,25 @@
+
+
 .App {
   min-height: 100vh;
-  padding: 2rem;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
   box-sizing: border-box;
-  background: #f7f5f2;
+  background: #f8fafc;
+  color: #111827;
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
 .BusinessList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 0 auto;
-  padding: 1rem;
-  max-width: 1200px;
-}
-
-.BusinessList > * {
-  flex: 1 1 280px;
+  width: 100%;
+  padding: 2.5rem 2rem 3rem 2rem;
+  margin: 0;
+  max-width: 100%;
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: start;
 }

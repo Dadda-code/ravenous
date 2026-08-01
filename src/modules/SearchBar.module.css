@@ -1,0 +1,157 @@
+.searchBar {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  padding: 3rem 2rem 3rem;
+  border-radius: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.82)),
+    url("https://static.vecteezy.com/ti/foto-gratuito/t2/1853213-vista-dall-alto-degli-ingredienti-gratuito-foto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: lighten;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35), 0 18px 60px rgba(15, 23, 42, 0.08);
+}
+
+.brandHeader {
+  max-width: 840px;
+  margin: 0 auto 0.75rem;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.95rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.searchHeader {
+  max-width: 840px;
+  margin: 0 auto 1.3rem;
+  text-align: center;
+}
+
+.searchHeader h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  color: #111827;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+}
+
+.searchHeader p {
+  margin: 0.75rem auto 0;
+  color: #4b5563;
+  font-size: 0.98rem;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.sortOptions {
+  margin-bottom: 1.5rem;
+}
+
+.sortOptions ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sortOptions li {
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+  color: #6b7280;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+.sortOptions li:hover,
+.sortOptions li.active {
+  color: #111827;
+  border-bottom-color: #111827;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 640px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+label {
+  flex: 1 1 240px;
+  min-width: 200px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: #111827;
+  font-weight: 600;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  border-radius: 12px;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.92rem;
+  color: #111827;
+  background: #ffffff;
+  box-shadow: inset 0 1px 6px rgba(15, 23, 42, 0.06);
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+.searchButton {
+  width: 260px;
+  border: 0;
+  border-radius: 16px;
+  background: #111827;
+  color: white;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 14px 30px rgba(17, 24, 39, 0.18);
+}
+
+.searchButton:hover {
+  background: #1f2937;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 860px) {
+  .searchBar {
+    padding: 2rem 1.25rem 2.5rem;
+  }
+
+  .inputs {
+    flex-direction: column;
+  }
+
+  .searchButton {
+    width: 100%;
+  }
+}
