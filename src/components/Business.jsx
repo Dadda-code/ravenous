@@ -1,6 +1,8 @@
 import styles from '../modules/Business.module.css';
 
-function Business({ image, name, address, city, state, zipcode, category, rating, reviewCount }) {
+function Business({business}) {
+  const { image, name, address, city, state, zipcode, category, rating, reviewCount } = business;
+  
   return (
     <div className={styles.business}>
       <div className={styles['image-container']}>

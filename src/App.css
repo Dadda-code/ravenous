@@ -1,0 +1,21 @@
+.App {
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  background: #f7f5f2;
+}
+
+.BusinessList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1200px;
+}
+
+.BusinessList > * {
+  flex: 1 1 280px;
+}
